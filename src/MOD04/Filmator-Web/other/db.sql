@@ -12,7 +12,6 @@ create table filmes(
 --CRIAÇÃO DA TABELA DE CADASTRO DE USUARIOS
 create table usuarios (
 idUsuario int not null auto_increment primary key,
-nome varchar(20) not null,
-senha varchar(30) not null,
-email varchar(40) not null
-);
+email varchar(40) not null,
+senha varchar(30) not null
+)
