@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=novoNome\ novoflechas
+comment0.target=ElfoNoturno(java.lang.String,\ int)
+comment0.text=\r\n\ Construtor\ de\ Elfo's\ Noturnos\ com\ nome\ e\ flechas\r\n
+comment1.params=novoNome
+comment1.target=ElfoNoturno(java.lang.String)
+comment1.text=\r\n\ Construtor\ de\ Elfo's\ Noturnos\ com\ nome\r\n
+comment2.params=orc
+comment2.target=double\ atirarFlecha(Orc)
+numComments=3

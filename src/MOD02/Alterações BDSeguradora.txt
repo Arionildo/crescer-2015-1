@@ -1,0 +1,6 @@
+Seguradora:
+  Tabelas:
+- Documento;
+- Pessoa_Fisica;
+- Pessoa_Juridica;
+- Contato;

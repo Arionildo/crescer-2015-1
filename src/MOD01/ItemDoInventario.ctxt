@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=novaDescricao\ novaQuantidade
+comment0.target=ItemDoInventario(java.lang.String,\ int)
+comment1.params=novaDescricao
+comment1.target=void\ setDescricao(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getDescricao()
+comment3.params=novaQuantidade
+comment3.target=void\ setQuantidade(int)
+comment4.params=
+comment4.target=int\ getQuantidade()
+numComments=5

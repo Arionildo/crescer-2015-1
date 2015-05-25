@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="campo">
+			<h1>{{usuario}},</h1>
+			<h3>Abaixo você pode conferir a lista de filmes do nosso acervo.</h3>
+			<form action="\cadastro" method="GET">
+				<input type="submit" value="Voltar ao Cadastro">
+			</form>
+		</div>
+		
+		{{#filmes}}
+		<div class="campo consulta">
+			
+			
+			<ul>
+				
+				<li>
+				<p>
+					Nome: {{nome}}
+				</p>
+				<p>
+					Gênero: {{genero}}
+				</p>
+				<p>
+					Ano: {{ano}}
+				</p>
+				<div class="imagemSinopse">
+					<img src="{{foto}}">
+					Sinopse: {{sinopse}}
+				</div>
+				</li>
+				
+			</ul>
+		</div>
+		{{/filmes}}
+	</body>
+</html>

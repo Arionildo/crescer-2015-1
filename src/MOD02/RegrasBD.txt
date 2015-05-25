@@ -1,0 +1,6 @@
+Regras:
+1 - Toda tabela deve conter Chave Primária;
+2 - Máximo de 23 colunas por tabela;
+3 - Nunca deve ter número no final da tabela;
+4 - 30% de colunas opcionais no máximo;
+5 - Não salvar arquivos no banco.

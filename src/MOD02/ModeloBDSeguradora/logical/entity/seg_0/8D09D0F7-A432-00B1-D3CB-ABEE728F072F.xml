@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8D09D0F7-A432-00B1-D3CB-ABEE728F072F" name="Bairro">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:11:26 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDBairro" id="8525CA66-1CDD-70F6-134A-AE7496167D2A">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:11:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="Nome" id="3C53D5DE-8B0D-8D86-0528-CA2B11683A70">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:12:01 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="IDCidade" id="27E0B018-6BC3-F5C1-E8E5-0B0BFFAF42EC">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:23:19 UTC</createdTime>
+<generatorID>BCFB9BF7-4F96-54E6-0133-EDAB4F0F8F4A</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<referedAttribute>954F8C15-D1C9-13A6-A961-19F028D625C5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="78710B6D-E50E-3BB1-CB4F-224E73ABBE16" name="{entity} PK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:11:59 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8525CA66-1CDD-70F6-134A-AE7496167D2A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

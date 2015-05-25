@@ -1,0 +1,45 @@
+table {
+	text-align: center;
+	font-family: Arial;
+}
+
+#Nivel3 {
+	background-color: #ff4444;
+}
+
+#Nivel2 {
+	background-color: #ffff00;
+}
+
+#Nivel1 {
+	background-color: #44ff44;
+}
+
+#imagem01 {
+	margin-bottom: 30px;
+}
+
+h1 {
+	color: green;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li img{
+	width: 300px;
+	height: 300px;
+}
+
+p {
+	font-family: Arial;
+	font-size: 20px;
+}
+
+ul li p {
+	position: relative;
+	margin-left: 150px;
+	margin-top: 50px;
+	z-index: 1;
+}

@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1EA35CB9-3329-1E44-7EF7-44417A0A95F4" name="Cliente">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 17:39:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDCliente" id="24965F2B-99EC-451C-B36F-0444BE648CDB">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 17:40:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="Nome" id="C180B8FC-8086-AF1A-F139-A508DB912CC0">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 17:40:20 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="Data Nascimento" id="A6B24DCE-F8E8-D2AC-DCDA-8DC4302E05C5">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 17:41:23 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="CPF" id="BB0BF585-E19E-523F-9284-774D116E294B">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 17:41:57 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+</Attribute>
+<Attribute name="Telefone1" id="88DBEE59-360A-3DF9-A0A5-DCF43F7DC763">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 17:53:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+</Attribute>
+<Attribute name="Telefone2" id="29303F25-DCB9-A835-CAE1-3D0D1DAA92EA">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 17:53:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+</Attribute>
+<Attribute name="Percentual Seguro" id="4D0ECA4B-7F69-7833-7F26-A05379F6BB8F">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 17:56:19 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="IDBairro" id="0DBA3942-64A5-CBC1-BF5C-22EC8BBC694B">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:24:57 UTC</createdTime>
+<generatorID>F8DE163C-6B8A-93EB-8BCF-6E7A964294C1</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<referedAttribute>8525CA66-1CDD-70F6-134A-AE7496167D2A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="IDCidade" id="AF7F141F-2F0A-CDB9-F723-E22289559299">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:25:48 UTC</createdTime>
+<generatorID>6810C445-A727-986C-28E0-F13DE000B613</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<referedAttribute>954F8C15-D1C9-13A6-A961-19F028D625C5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="IDEstado" id="D787778D-C057-319F-5E70-0AFB118238C0">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:26:10 UTC</createdTime>
+<generatorID>374CAA9C-D98C-F910-766A-31BDF034236D</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<referedAttribute>FBD35D58-AA18-6464-FE0B-727E9C49003E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="IDCliente1" id="B4128F45-C8C6-BFEA-3A2A-AC2C4BFC0E25">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:55:51 UTC</createdTime>
+<generatorID>F898F595-C6E2-C01E-FE42-CFAFD57634F5</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<referedAttribute>24965F2B-99EC-451C-B36F-0444BE648CDB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D39E1BA1-4704-2F0C-E69B-9D1B5EAA1C21" name="Cliente_PK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 17:40:18 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>24965F2B-99EC-451C-B36F-0444BE648CDB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

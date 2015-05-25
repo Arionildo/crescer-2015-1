@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="73DDA9C6-1D95-33DF-7FB0-889C48449C18" name="Bairro_Cidade_FK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>BCFB9BF7-4F96-54E6-0133-EDAB4F0F8F4A</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<containerWithKeyObject>58AE6171-4E6D-0E87-0BA1-07641733AF87</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>D8668771-B96A-DD88-D2F8-C2270D68B365</localFKIndex>
+<keyObject>B852033F-02FE-0096-90CB-DA44B3C96181</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

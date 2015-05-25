@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=novoNome\ novoflechas
+comment0.target=Elfo(java.lang.String,\ int)
+comment0.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ Elfo\r\n
+comment1.params=novoNome
+comment1.target=Elfo(java.lang.String)
+comment2.params=
+comment2.target=void\ setContagem()
+comment3.params=
+comment3.target=void\ resetContagem()
+comment4.params=
+comment4.target=int\ getContagem()
+comment5.params=orc
+comment5.target=double\ atirarFlecha(Orc)
+comment6.params=novoFlechas
+comment6.target=void\ setFlechas(int)
+comment7.params=
+comment7.target=int\ getFlechas()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

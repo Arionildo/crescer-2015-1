@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="04A58E7E-1496-DF92-A332-3B1436AE9961" name="Contrato">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>BBD9E627-C1C1-A15B-DA57-50F993C4FCA6</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDContrato" id="6E4E62DD-7FD9-6064-9054-FFC4D1730A8F">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>ED27ABA3-BD24-4BE0-1797-24AC91F751AD</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descricao" id="6AE879B8-3A92-25BD-8423-E320187589FE">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>0022A5EA-4825-F0E1-105F-E638C90F6588</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Valor_Seguro" id="3B6DB094-191B-77F7-B30B-6093B6F1B36A">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>0AF42697-D87C-FE15-5722-262C94626B9E</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Inicio" id="89785E44-742E-6715-A5BE-5E53317D06F6">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>C359D024-745A-DE1F-5EBB-994B6C923BAE</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Fim" id="6439167E-7817-4644-8B12-43925F9C94FB">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>0173A070-D348-8B83-DDC5-28C0D5BB4192</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Endereco_Entrega" id="F8B7DBFD-3CC2-DA17-D3A2-A776D5F6F4B1">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>99C074AA-25F5-C5FC-7DC1-36A7C308BB5F</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Endereco_Cobranca" id="9AD4213D-53B1-39ED-C944-B07681732D16">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>5DA22CAB-52AE-8438-B1E4-87F172BAE7DB</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Forma_Envio" id="E3A7F7B7-797F-74D6-71C5-73608C5D649A">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>0EAC029C-93CF-BC83-1591-FF4F75A24A62</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F73A85E-86DE-495D-EA26-1568C0B773E6" name="Seguro_PK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>A9A9A884-E3F6-FD36-E2AD-18DFB3686F39</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E4E62DD-7FD9-6064-9054-FFC4D1730A8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

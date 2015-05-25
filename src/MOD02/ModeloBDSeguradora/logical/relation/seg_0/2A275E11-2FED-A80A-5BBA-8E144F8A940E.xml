@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_Endereco_Bairro" directorySegmentName="seg_0" id="2A275E11-2FED-A80A-5BBA-8E144F8A940E">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:53:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<sourcePk>16BB54ED-8952-392D-7742-1AFD60596669</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8D09D0F7-A432-00B1-D3CB-ABEE728F072F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B35F24B1-AD44-5450-51BF-ACABD9540B28</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

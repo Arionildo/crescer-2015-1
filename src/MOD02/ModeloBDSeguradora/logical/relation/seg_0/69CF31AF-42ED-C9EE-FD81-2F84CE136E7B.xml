@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_Cidade_Beneficiario" directorySegmentName="seg_0" id="69CF31AF-42ED-C9EE-FD81-2F84CE136E7B">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:26:29 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<sourcePk>24D6124A-C69A-29A0-8F8D-D95D1C218677</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>ED3E634F-F464-29C0-9BB1-A597A45C7AEE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>513D3DD0-A9FA-0203-C474-A5763A964E04</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

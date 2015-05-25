@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="47688BC5-DB31-C8B5-16E8-463B3AC7C81A" name="Estado">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>3CDAB228-C219-A288-780A-6A769CF7A659</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDEstado" id="90378CF5-F5CE-B262-B2B2-B5BA18F12481">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>FBD35D58-AA18-6464-FE0B-727E9C49003E</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="B343A3CC-F04E-8B3D-715F-799B332FF099">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>288C1949-7EBE-1F10-7756-615CAD79DD6A</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Sigla" id="C51E88F1-42CC-07F2-6F58-717FD0427905">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>4EB88558-10FB-8951-8B32-756FADE3761F</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0A5383B9-2CBF-4619-4C80-227CC1B1428D" name="Estado_PK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>739044DF-C4C0-0172-DB0B-8BC5B8C560F1</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90378CF5-F5CE-B262-B2B2-B5BA18F12481"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

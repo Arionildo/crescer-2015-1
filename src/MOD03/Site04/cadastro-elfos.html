@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de Elfos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+<body onload="main()">
+	<form method="POST" action="" enctype="multipart/form-data">
+		<div>
+			<label>Nome do Elfo:</label>
+				<input type="text" name="Nome" placeholder="Legolas da Silva Sauro" pattern=".{6,}" title="6 letras ou mais" required>
+
+			<label>Sexo:</label>
+				<input type="radio" name="sexo" value="masculino"> Masculino
+				<input type="radio" name="sexo" value="feminino" required> Feminino
+
+			<label>Quantidade de Flechas Iniciais:</label>
+				<input type="number" name="quantidade" placeholder="42" value="42">
+
+			<label>Data de Nascimento:</label>
+				<input type="date" name="nascimento" required>
+
+			<label>Status Inicial:</label>
+				<select>
+					<option value="Dormindo">Dormindo</option>
+					<option value="Caçando">Caçando</option>
+					<option value="Contando Piada">Contando Piada</option>
+				</select>
+
+			<label>Itens Iniciais:</label>
+				<input type="checkbox" checked="true" name="item" value="Arco e Flecha"> Arco e Flecha
+				<input type="checkbox" name="item" value="Espada de Aço Porto-alegrense"> Espada de Aço Porto-alegrense
+				<input type="checkbox" checked="true" name="item" value="Escudo de Amburana"> Escudo de Amburana
+				<input type="checkbox" name="item" value="Poção HP"> Poção HP
+
+			<label>Imagem Avatar:</label>
+				<input type="file" name="imagem" accept=".jpg,.png" onchange="return validaImagem()" style="display: block;">
+
+			<input type="submit" value="Enviar Cadastro" style="margin-top: 20px;">
+
+			<p id="console"></p>
+		</div>
+	</form>
+</body>
+</html>

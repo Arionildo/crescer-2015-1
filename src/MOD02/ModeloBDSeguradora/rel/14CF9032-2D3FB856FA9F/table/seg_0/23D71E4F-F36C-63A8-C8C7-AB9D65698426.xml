@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="23D71E4F-F36C-63A8-C8C7-AB9D65698426" name="Cidade">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>ED3E634F-F464-29C0-9BB1-A597A45C7AEE</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDCidade" id="0E36C677-F5DF-49F3-924D-AA19769F4AA4">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>954F8C15-D1C9-13A6-A961-19F028D625C5</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="2A6D62CE-11FA-C919-37BB-82093ADAFD71">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>A40E12CD-E18D-8145-6C48-440304A2FC75</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado_IDEstado" id="56425278-4748-A794-5FAC-86C96958E362">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>5503FD3B-749B-562A-AEF2-BD0E8641FBE0</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>90378CF5-F5CE-B262-B2B2-B5BA18F12481</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E654188C-B0C6-8E79-6EF6-7214819D45E6" referredColumn="90378CF5-F5CE-B262-B2B2-B5BA18F12481"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B852033F-02FE-0096-90CB-DA44B3C96181" name="Cidade_PK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>24D6124A-C69A-29A0-8F8D-D95D1C218677</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E36C677-F5DF-49F3-924D-AA19769F4AA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF17133D-6D9E-472F-2B78-67AE92057B7C" name="Cidade_Estado_FK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>87515599-A47F-8ACA-5E33-6E72A694A28E</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56425278-4748-A794-5FAC-86C96958E362"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

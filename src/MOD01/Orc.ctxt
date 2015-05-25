@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Orc()
+comment0.text=\r\n\ Construtor\ de\ Orc's\r\n
+comment1.params=nome
+comment1.target=Orc(java.lang.String)
+comment1.text=\r\n\ Construtor\ de\ Orc's\ com\ nome\ tamb\u00E9m\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Exibe\ a\ Vida\ do\ Orc\r\n
+comment3.params=
+comment3.target=void\ tentarSorte()
+comment4.params=
+comment4.target=double\ gerarNumero()
+comment4.text=\r\n\ Gera\ um\ n\u00FAmero\ e\ compara\ se\ este\ \u00E9\ o\ n\u00FAmero\ da\ sorte\ do\ Orc\r\n
+comment5.params=valor
+comment5.target=void\ diminuirVida(int)
+comment5.text=\r\n\ Diminui\ a\ vida\ do\ Personagem\ no\ valor\ requerido\r\n
+numComments=6

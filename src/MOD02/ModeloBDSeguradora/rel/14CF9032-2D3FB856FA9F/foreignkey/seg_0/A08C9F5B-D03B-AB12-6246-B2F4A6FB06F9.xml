@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A08C9F5B-D03B-AB12-6246-B2F4A6FB06F9" name="Endereco_Bairro_FK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 19:01:25 UTC</createdTime>
+<generatorID>2A275E11-2FED-A80A-5BBA-8E144F8A940E</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<containerWithKeyObject>F4FCA44E-EBB6-0399-8368-658ECD0ACA55</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>03A322D2-0350-2993-2C35-297CF01DD1DA</localFKIndex>
+<keyObject>B8781512-03EE-86FF-5161-E4A4559845D0</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

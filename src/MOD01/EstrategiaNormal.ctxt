@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=e\ o
+comment0.target=void\ atacarOrcs(java.util.ArrayList,\ java.util.ArrayList)
+comment1.params=
+comment1.target=java.util.ArrayList\ getOrdemUltimoAtaque()
+numComments=2

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_Contrato_TipoSeguro" directorySegmentName="seg_0" id="BDA80EBC-FC48-EB5C-3A4F-2C954C20F298">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:57:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<engineerTo>
+<item key="14CF9032-54EE-69EB-F708-2D3FB856FA9F" value="true"/>
+</engineerTo>
+<sourcePk>A9A9A884-E3F6-FD36-E2AD-18DFB3686F39</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BBD9E627-C1C1-A15B-DA57-50F993C4FCA6</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>30543A33-81AF-19F9-0A4B-F559343E0D2A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

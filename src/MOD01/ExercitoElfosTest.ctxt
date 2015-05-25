@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ alistaNenhumElfo()
+comment1.params=
+comment1.target=void\ alistaDoisElfos()
+comment2.params=
+comment2.target=void\ alistaQuatroElfosExcetoElfoNormal()
+comment3.params=
+comment3.target=void\ buscaPorNomeDeUmElfo()
+comment4.params=
+comment4.target=void\ buscaPorNomeDeUmElfoNaoAlistado()
+comment5.params=
+comment5.target=void\ agruparElfosPorStatus()
+numComments=6

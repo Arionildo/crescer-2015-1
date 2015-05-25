@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="8D09D0F7-A432-00B1-D3CB-ABEE728F072F" name="Bairro" seqName="seg_0"/>
+   <object objectType="Entity" objectID="513D3DD0-A9FA-0203-C474-A5763A964E04" name="Beneficiario" seqName="seg_0"/>
+   <object objectType="Entity" objectID="ED3E634F-F464-29C0-9BB1-A597A45C7AEE" name="Cidade" seqName="seg_0"/>
+   <object objectType="Entity" objectID="1EA35CB9-3329-1E44-7EF7-44417A0A95F4" name="Cliente" seqName="seg_0"/>
+   <object objectType="Entity" objectID="BBD9E627-C1C1-A15B-DA57-50F993C4FCA6" name="Contrato" seqName="seg_0"/>
+   <object objectType="Entity" objectID="B35F24B1-AD44-5450-51BF-ACABD9540B28" name="Endereco" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3CDAB228-C219-A288-780A-6A769CF7A659" name="Estado" seqName="seg_0"/>
+   <object objectType="Entity" objectID="30543A33-81AF-19F9-0A4B-F559343E0D2A" name="Tipo_Seguro" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F4B4B4B9-CBF6-38AD-2E7B-AFE68C330992" name="Beneficiario Cliente FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F2236B56-966C-B5C5-C9C7-18D202AD3082" name="Beneficiario Seguro FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2D984CC0-3DF8-5100-8799-446C6B003D92" name="FK_Bairro_Beneficiario" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F8DE163C-6B8A-93EB-8BCF-6E7A964294C1" name="FK_Bairro_Cliente" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BCFB9BF7-4F96-54E6-0133-EDAB4F0F8F4A" name="FK_Cidade_Bairro" seqName="seg_0"/>
+   <object objectType="Relation" objectID="69CF31AF-42ED-C9EE-FD81-2F84CE136E7B" name="FK_Cidade_Beneficiario" seqName="seg_0"/>
+   <object objectType="Relation" objectID="6810C445-A727-986C-28E0-F13DE000B613" name="FK_Cidade_Cliente" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BDA80EBC-FC48-EB5C-3A4F-2C954C20F298" name="FK_Contrato_TipoSeguro" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2A275E11-2FED-A80A-5BBA-8E144F8A940E" name="FK_Endereco_Bairro" seqName="seg_0"/>
+   <object objectType="Relation" objectID="6226A34F-1444-3B4D-4F47-650D0CB9495E" name="FK_Endereco_Beneficiario" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F898F595-C6E2-C01E-FE42-CFAFD57634F5" name="FK_Endereco_Cliente" seqName="seg_0"/>
+   <object objectType="Relation" objectID="673CF492-C94A-8D52-D4D4-5DC020093A28" name="FK_Estado_Beneficiario" seqName="seg_0"/>
+   <object objectType="Relation" objectID="87515599-A47F-8ACA-5E33-6E72A694A28E" name="FK_Estado_Cidade" seqName="seg_0"/>
+   <object objectType="Relation" objectID="374CAA9C-D98C-F910-766A-31BDF034236D" name="FK_Estado_Cliente" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

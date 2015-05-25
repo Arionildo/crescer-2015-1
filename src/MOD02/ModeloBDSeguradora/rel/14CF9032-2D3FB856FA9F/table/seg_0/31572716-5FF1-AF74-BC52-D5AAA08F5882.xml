@@ -1,0 +1,278 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="31572716-5FF1-AF74-BC52-D5AAA08F5882" name="Beneficiario">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>513D3DD0-A9FA-0203-C474-A5763A964E04</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDBeneficiario" id="08C23D79-8F2E-4632-73FD-549734D66A26">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>BE07B9FB-DC65-CF93-D1AB-0DC444D4F1B5</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="72246D7D-067B-1B59-C303-EB0E57234842">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>B005D32E-56AE-3E85-B367-9D51BA88EABE</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPF" id="188B1EB9-8641-BEBE-0F17-C82DDEA00DEA">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>45EC629D-A2A7-685C-B009-161D081DBAE9</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Endereco" id="39FA64B4-BA9D-5120-9650-9DD26F94B6D9">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>23A7EB38-EDAD-F697-93D6-B70DA3451202</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Nascimento" id="BD313129-80A3-A369-EDE1-76DB2462909D">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>A449D85C-9B8E-3A06-6F41-0BFC05A2A5C4</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefone1" id="5DC67F8F-5E01-D463-CE6E-D817D9F8FC4E">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>E08D724E-C6CF-0740-F7B7-AC5B80942032</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefone2" id="ECFAB7D5-7E9F-6C70-B94A-9151E5901AE2">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>D1835642-D1AF-07D9-D3D5-67D01F0B557F</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Percentual_Seguro" id="0C41423C-2E2C-3921-88B1-716534BCC138">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>56D3B4E7-62A9-B8C5-0AC6-A1D4C05EA22C</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_IDCliente" id="1397ADBE-C8E8-755C-1719-BF809295B929">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>567B0D62-CAB5-B05F-3FBB-0D37FDE69B3D</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>FF5201A5-7D3B-5E05-46F3-BC9371B56EC7</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="144E06CB-222E-75BE-7EEA-EE6D51B47C46" referredColumn="FF5201A5-7D3B-5E05-46F3-BC9371B56EC7"/>
+</associations>
+</Column>
+<Column name="Seguro_IDSeguro" id="4AC04C09-77EA-8FF7-FDBB-AB776720FC16">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>87FF0D46-6C42-A362-7A4D-785AF2BC105F</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>6E4E62DD-7FD9-6064-9054-FFC4D1730A8F</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="85E0B770-AEDE-5B22-7AB8-6CC291F8E375" referredColumn="6E4E62DD-7FD9-6064-9054-FFC4D1730A8F"/>
+</associations>
+</Column>
+<Column name="Bairro_IDBairro" id="E26B4A0B-44E0-D608-D509-AE4F0B7C7222">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>ED7B6CDF-144E-24CE-29CC-4C9DC70E03DB</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>91E37B63-8ECE-0BA5-3C2D-7EEFF20C6889</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A57AC036-E1A2-BB87-403E-9A2C9F9066EE" referredColumn="91E37B63-8ECE-0BA5-3C2D-7EEFF20C6889"/>
+</associations>
+</Column>
+<Column name="Cidade_IDCidade" id="D9C4161E-7E55-7D8C-E8B8-CD87C9D66C2D">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>EE493271-74E2-1693-2F37-3A0DC7E84EA6</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>0E36C677-F5DF-49F3-924D-AA19769F4AA4</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D9DBE12-9DE8-C9B9-9CC9-6244B08F50EB" referredColumn="0E36C677-F5DF-49F3-924D-AA19769F4AA4"/>
+</associations>
+</Column>
+<Column name="Estado_IDEstado" id="C0D3B70B-2F0D-B0C6-DB03-BB1CE2B5B8CC">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>78329879-403B-C2AC-6BD8-BF55ED95812E</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>90378CF5-F5CE-B262-B2B2-B5BA18F12481</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E477FAFD-9397-5BE4-FAB4-A751F5E345AC" referredColumn="90378CF5-F5CE-B262-B2B2-B5BA18F12481"/>
+</associations>
+</Column>
+<Column name="CEP" id="5C3490B9-7659-7C25-AFF9-9D93D724FDBC">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>08FA3FCA-B695-D582-4D34-C71E304A2F3C</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Endereco_IDEndereco" id="7A4D697E-62CE-7255-7EAE-074B813CAC29">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 19:01:25 UTC</createdTime>
+<generatorID>8EEE5DAC-602C-41C8-BDFE-78C137616B18</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>ADFCFDC7-7BE0-C830-7AA2-7DB5562EE27F</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="45C54C1E-F71A-EA05-9C21-510126A1D6AC" referredColumn="ADFCFDC7-7BE0-C830-7AA2-7DB5562EE27F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="419EE81D-0DA1-ED49-ECBC-283F33E1B6AC" name="Beneficiario_PK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>69CE4091-69FF-6D3B-3D49-79159F9E316D</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08C23D79-8F2E-4632-73FD-549734D66A26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E41624B3-3A4E-C7A3-9FCD-B40BBBB089BE" name="Beneficiario_Cliente_FK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:42 UTC</createdTime>
+<generatorID>F4B4B4B9-CBF6-38AD-2E7B-AFE68C330992</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1397ADBE-C8E8-755C-1719-BF809295B929"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="859160A5-D471-7220-9342-29DBABB57611" name="Beneficiario_Seguro_FK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:03:43 UTC</createdTime>
+<generatorID>F2236B56-966C-B5C5-C9C7-18D202AD3082</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AC04C09-77EA-8FF7-FDBB-AB776720FC16"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49E7676E-DE1B-3D2B-F405-DD94152ABAF7" name="Beneficiario_Bairro_FK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>2D984CC0-3DF8-5100-8799-446C6B003D92</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E26B4A0B-44E0-D608-D509-AE4F0B7C7222"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFBC167E-1F25-0A4C-44A9-AE83A6737C7A" name="Beneficiario_Cidade_FK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>69CF31AF-42ED-C9EE-FD81-2F84CE136E7B</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9C4161E-7E55-7D8C-E8B8-CD87C9D66C2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E48B1F04-AE03-7B54-EE01-63358A54AAE8" name="Beneficiario_Estado_FK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>673CF492-C94A-8D52-D4D4-5DC020093A28</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0D3B70B-2F0D-B0C6-DB03-BB1CE2B5B8CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="268F32DA-9080-B7DD-E842-CA2B61263BB8" name="Beneficiario_Endereco_FK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 19:01:25 UTC</createdTime>
+<generatorID>6226A34F-1444-3B4D-4F47-650D0CB9495E</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A4D697E-62CE-7255-7EAE-074B813CAC29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

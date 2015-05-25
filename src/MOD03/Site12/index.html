@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map_canvas {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+      var map;
+      var latlng = new google.maps.LatLng(-30.034647, -51.217658);
+
+      function initialize() {
+        var mapOptions = {
+          zoom: 14,
+          center: new google.maps.LatLng(-30.034647,-51.217658),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('map_canvas'),
+            mapOptions);
+
+        criarMarcador();
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+      function criarMarcador(){
+        var marker = new google.maps.Marker({
+           map: map,
+           position: latlng,
+           title: "1, 2, 3, testando..."
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="map_canvas"></div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58AE6171-4E6D-0E87-0BA1-07641733AF87" name="Bairro">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>8D09D0F7-A432-00B1-D3CB-ABEE728F072F</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDBairro" id="91E37B63-8ECE-0BA5-3C2D-7EEFF20C6889">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>8525CA66-1CDD-70F6-134A-AE7496167D2A</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="F71C9262-9482-9808-B6CB-14770AAAFCEE">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>3C53D5DE-8B0D-8D86-0528-CA2B11683A70</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cidade_IDCidade" id="FB692AB8-E288-3996-CEFC-3DECF93C6C49">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>27E0B018-6BC3-F5C1-E8E5-0B0BFFAF42EC</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>0E36C677-F5DF-49F3-924D-AA19769F4AA4</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73DDA9C6-1D95-33DF-7FB0-889C48449C18" referredColumn="0E36C677-F5DF-49F3-924D-AA19769F4AA4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B8781512-03EE-86FF-5161-E4A4559845D0" name="Bairro_PK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>78710B6D-E50E-3BB1-CB4F-224E73ABBE16</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91E37B63-8ECE-0BA5-3C2D-7EEFF20C6889"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8668771-B96A-DD88-D2F8-C2270D68B365" name="Bairro_Cidade_FK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 18:36:14 UTC</createdTime>
+<generatorID>BCFB9BF7-4F96-54E6-0133-EDAB4F0F8F4A</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB692AB8-E288-3996-CEFC-3DECF93C6C49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

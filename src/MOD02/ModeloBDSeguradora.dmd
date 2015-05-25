@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ModeloBDSeguradora" id="2B5200F0-9425-9B87-FEDB-8014E1C33FA8" version="3.5">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 17:39:21 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2B5200F0-9425-9B87-FEDB-8014E1C33FA8</designId>
+</OSDM_Design>

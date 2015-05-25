@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3876A272-5C75-8A7C-74C1-E85EBC58C6FB" name="Tipo_Seguro">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 19:01:25 UTC</createdTime>
+<generatorID>30543A33-81AF-19F9-0A4B-F559343E0D2A</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDTipoSeguro" id="6C590AE3-98CC-FADE-5EB6-92A03DFFB86C">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 19:01:25 UTC</createdTime>
+<generatorID>E932318C-5E77-0A0E-478B-6431B71C4170</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descricao" id="9A4C7E73-32E3-5F16-C361-140EEECA2EC8">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 19:01:25 UTC</createdTime>
+<generatorID>3955217D-1B7C-2B75-BFB5-E119F238279A</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Valor_Seguro" id="13AED539-3182-3E60-6524-1107E988950D">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 19:01:25 UTC</createdTime>
+<generatorID>DD8C8B2E-D8C2-DF19-8F4C-C3420CFF8E92</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contrato_IDContrato" id="0D600AB0-A506-2D90-A9F4-F08A70BD9C9D">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 19:01:25 UTC</createdTime>
+<generatorID>346B1A84-B137-FCAD-B85A-1EF3ACA9B59F</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>6E4E62DD-7FD9-6064-9054-FFC4D1730A8F</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F6FEE427-55C8-BF05-70D4-EDB4C0038E68" referredColumn="6E4E62DD-7FD9-6064-9054-FFC4D1730A8F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A71CABCD-E7AE-7CF7-0E4A-D515AD14E5E1" name="Tipo_Seguro_PK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 19:01:25 UTC</createdTime>
+<generatorID>2A5F69FC-67F5-F7E6-442E-21C57A287ED6</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C590AE3-98CC-FADE-5EB6-92A03DFFB86C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43CF71BA-FF07-74CA-7250-46567ADE65B4" name="Tipo_Seguro__IDX">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 19:01:25 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>BDA80EBC-FC48-EB5C-3A4F-2C954C20F298</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="0D600AB0-A506-2D90-A9F4-F08A70BD9C9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A89A1D8-0D79-7698-AD90-C88389F63251" name="Tipo_Seguro_Contrato_FK">
+<createdBy>projetocrescer</createdBy>
+<createdTime>2015-04-17 19:01:25 UTC</createdTime>
+<generatorID>BDA80EBC-FC48-EB5C-3A4F-2C954C20F298</generatorID>
+<ownerDesignName>ModeloBDSeguradora</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D600AB0-A506-2D90-A9F4-F08A70BD9C9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
