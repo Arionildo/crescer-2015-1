@@ -1,5 +1,10 @@
 
 # Projeto Crescer 2015/1
+
+
+!!!AVISO: OS COMMIT'S DOS ARQUIVOS POSTADOS NO DIA 25.05.15 ESTÃO NO [REPOSITÓRIO ANTIGO](https://github.com/Arionildo/crescer-2015-1-antigo-repositorio) DEVIDO A UMA MIGRAÇÃO DE ARQUIVOS!!!
+
+
 Repositório utilizado pela CWI Software durante as aulas do projeto Crescer. Não conhece? Então [clique aqui!](http://www.cwi.com.br/Empresa/Crescer)
 
 <img src="https://cloud.githubusercontent.com/assets/2975955/6779644/f3f198d8-d13c-11e4-9361-08b8e673a49d.png" height="250">
