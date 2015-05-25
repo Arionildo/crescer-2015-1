@@ -17,4 +17,3 @@ public class ConsultaController {
 		return "cadastro";
 	}
 }
-

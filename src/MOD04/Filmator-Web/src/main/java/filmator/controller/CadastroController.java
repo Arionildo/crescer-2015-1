@@ -1,5 +1,7 @@
 package filmator.controller;
 
+import javax.inject.Inject;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +13,7 @@ import filmator.model.Filme;
 @Controller
 public class CadastroController {
 
+	@Inject
 	private FilmeDao dao = new FilmeDao();
 	private String mensagem;
 	
