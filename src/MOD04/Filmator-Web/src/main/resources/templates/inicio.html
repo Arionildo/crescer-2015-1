@@ -10,8 +10,10 @@
 			<h1>Olá,</h1>
 			<h2>Faça seu login<h2>
 			<form action="/cadastro" method="POST">
-				<input class="input01" type="text" name="nome" placeholder="Ex.: Maguila">
-				<input class="input01" type="password" name="senha">
+				<label class="label01">Nome:</label>
+					<input class="input01" type="text" name="nome" placeholder="Ex.: Maragato">
+				<label class="label01">Senha:</label>
+					<input class="input01" type="password" name="senha" placeholder="Use sua senha criada">
 				<input type="submit" value="ENTRAR">
 			</form>
 
@@ -20,10 +22,13 @@
 			{{/mensagem}}
 
 			<h2 class="fraseRegistro">Ou crie um registro<h2>
-			<form action="/confirmacao" method="POST">
-				<input class="input01" type="text" name="nome" placeholder="Ex.: Maguila">
-				<input class="input01" type="password" name="senha">
-				<input class="input01" type="email" name="email" placeholder="Ex.: maguila@gorila.com">
+			<form action="/registrado" method="POST">
+				<label class="label01">Nome:</label>
+					<input class="input01" type="text" name="nome" placeholder="Ex.: Maguila">
+				<label class="label01">Senha:</label>
+					<input class="input01" type="password" name="senha" placeholder="Dica: Crie uma senha com símbolos">
+				<label class="label01">Email:</label>
+					<input class="input01" type="email" name="email" placeholder="Ex.: maguila@gorila.com">
 				<input type="submit" value="REGISTRAR">
 			</form>
 		</div>

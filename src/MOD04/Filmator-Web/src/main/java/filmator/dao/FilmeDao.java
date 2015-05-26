@@ -15,15 +15,12 @@ public class FilmeDao {
 
 	@Inject
 	private JdbcTemplate jdbcTemplate;
-	//private List<Filme> filmes = new ArrayList<Filme>();
 	
 	public void inserirFilme(Filme filme) {
 		jdbcTemplate.update("INSERT INTO filmes (nome, genero, ano, foto, sinopse) VALUES (?, ?, ?, ?, ?)", filme.getNome(), filme.getGenero(), filme.getAno(), filme.getFoto(), filme.getSinopse());
-		//this.filmes.add(filme);
 	}
 	
 	public List<Filme> buscaTodosFilmes(){
-		//return filmes;
 		return jdbcTemplate.query("SELECT * FROM filmes", (ResultSet rs, int rowNum) -> {	
 			Filme filme = new Filme();
 			filme.setNome(rs.getString("nome"));
@@ -36,14 +33,13 @@ public class FilmeDao {
 	}
 	
 	public boolean isNotDuplicado(Filme filme){
-		/*List<String> nomes = new ArrayList<String>();
-		
-		for (Filme f : filmes) {
-			nomes.add(f.getNome());
+		for (Filme f : buscaTodosFilmes()) {
+			if (f.getNome().equals(filme.getNome())) {
+				return false;
+			} else {
+				continue;
+			}
 		}
-		
-		return !nomes.contains(filme.getNome());
-		*/
 		return true;
 	}
 }

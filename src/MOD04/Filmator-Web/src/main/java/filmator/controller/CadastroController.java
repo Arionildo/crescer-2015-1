@@ -40,4 +40,3 @@ public class CadastroController {
 		return "consulta";
 	}
 }
-
