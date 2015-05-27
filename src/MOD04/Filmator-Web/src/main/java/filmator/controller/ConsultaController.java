@@ -12,7 +12,7 @@ public class ConsultaController {
 	
 	@RequestMapping(value = "/cadastro", method = RequestMethod.GET)
 	public String voltarAoCadastro(Model model) {
-		model.addAttribute("usuario", HomeController.usuario);
+		model.addAttribute("usuario", HomeController.usuario.getNome());
 		model.addAttribute("generos", Genero.values());
 		return "cadastro";
 	}

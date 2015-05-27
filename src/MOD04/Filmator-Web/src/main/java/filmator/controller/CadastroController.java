@@ -35,7 +35,7 @@ public class CadastroController {
 //IMPEDE QUE HAJA FILME COM NOME DUPLICADO
 		if (dao.isNotDuplicado(filme)) dao.inserirFilme(filme);
 		
-		model.addAttribute("usuario", HomeController.usuario);
+		model.addAttribute("usuario", HomeController.usuario.getNome());
 		model.addAttribute("filmes",  dao.buscaTodosFilmes());
 		return "consulta";
 	}
