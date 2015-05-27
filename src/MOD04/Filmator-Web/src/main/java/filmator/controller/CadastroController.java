@@ -17,7 +17,7 @@ public class CadastroController {
 	private FilmeDao dao = new FilmeDao();
 	private String mensagem;
 	
-	@RequestMapping(value = "/consulta", method = RequestMethod.POST)
+	@RequestMapping(value = "/consultaAdm", method = RequestMethod.POST)
 	public String adicionarFilme(Model model, String nome, String genero, String ano, String foto, String sinopse) {
 		if (nome.trim() == ""
 				|| nome.trim().length() < 3
@@ -37,6 +37,22 @@ public class CadastroController {
 		
 		model.addAttribute("usuario", HomeController.usuario.getNome());
 		model.addAttribute("filmes",  dao.buscaTodosFilmes());
-		return "consulta";
+		return "consultaAdm";
+	}
+	
+
+	@RequestMapping(value = "/redirecionar", method = RequestMethod.GET)
+	public String redirecionarSeForCliente(Model model, String nome) {
+//O USUÁRIO É LEVADO À PÁGINA CONSULTA.HTML CASO SEJA UM CLIENTE
+		if (HomeController.usuario.getTipoAcesso() == 'C') {
+			nome = HomeController.usuario.getNomeComInicialMaiuscula(nome);
+			HomeController.usuario.setNome(nome);
+			
+			model.addAttribute("usuario", HomeController.usuario.getNome());
+			model.addAttribute("filmes",  dao.buscaTodosFilmes());
+			return "consulta";
+		} else {
+			return "";
+		}
 	}
 }

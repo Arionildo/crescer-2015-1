@@ -18,6 +18,10 @@ public class Usuario {
 	public Usuario() {
 		
 	}
+	
+	public String getNomeComInicialMaiuscula(String nome) {
+		return nome = nome.substring(0, 1).toUpperCase() + nome.substring(1);
+	}
 
 	public String getNome() {
 		return nome;

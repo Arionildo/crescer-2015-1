@@ -33,14 +33,17 @@ public class HomeController {
 			model.addAttribute("mensagem", mensagem);
 			return "inicio"; 
 		}
+		
 //RETORNA A REQUISIÇÃO CASO O USUÁRIO NÃO INFORME UM NOME JÁ REGISTRADO		
 		if (!dao.autenticarUsuario(nome, senha)) {
-			mensagem = "O usuário e/ou senha informado(s) não está(ão) registrado(s). Verifique se você digitou tudo corretamente.";
+			mensagem = "O usuário e/ou senha informado(s) não está(ão) registrado(s). "
+					+ "Verifique se você digitou tudo corretamente.";
 			model.addAttribute("mensagem", mensagem);
 			return "inicio";
 		}
-//APÓS INFORMAR UM NOME VÁLIDO, O USUÁRIO É LEVADO À PRÓXIMA PÁGINA
 		
+//DEIXA A PRIMEIRA LETRA DO NOME EM MAIÚSCULO PARA EXIBIR NAS PÁGINAS
+		nome = usuario.getNomeComInicialMaiuscula(nome);
 		usuario.setNome(nome);
 		
 		model.addAttribute("usuario", usuario.getNome());
@@ -56,7 +59,9 @@ public class HomeController {
 		
 		if (nome == null || nome.trim() == "" || nome.trim().length() < 3 ||
 				senha == null || senha.trim() == "" || senha.trim().length() < 5) {
-			mensagem = "Verifique se o nome e/ou senha que você digitou não está(ão) vazio(s) ou a senha possui menos de 5 caracteres.";
+			mensagem = "Verifique se o nome e/ou senha que você digitou não está(ão) vazio(s) "
+					+ "ou o nome possui menos de 3 caracteres ou "
+					+ "a senha possui menos de 5 caracteres.";
 			model.addAttribute("mensagem", mensagem);
 			return "inicio"; 
 		}
@@ -67,14 +72,19 @@ public class HomeController {
 			return "inicio"; 
 		}
 		
+//INSERÇÃO DE DADOS PARA O BANCO DE DADOS
 		usuario.setNome(nome);
 		usuario.setSenha(senha);
 		usuario.setEmail(email);
 		usuario.setTipoAcesso('C');		
 		dao.inserirUsuario(usuario);
 		
+//ATUALIZAÇÃO DO NOME PARA EXIBIR NAS TELAS
+		nome = usuario.getNomeComInicialMaiuscula(nome);
+		usuario.setNome(nome);
+		
 		model.addAttribute("usuario", usuario.getNome());
 		model.addAttribute("generos", Genero.values());
-		return "redirect:cadastro";
+		return "consulta";
 	}
 }
