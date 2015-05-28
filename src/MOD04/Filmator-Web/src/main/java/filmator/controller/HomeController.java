@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import filmator.dao.FilmeDao;
 import filmator.dao.UsuarioDao;
 import filmator.model.Genero;
 import filmator.model.Usuario;
@@ -16,6 +17,8 @@ public class HomeController {
 
 	@Inject
 	private UsuarioDao dao = new UsuarioDao();
+	@Inject
+	private FilmeDao filmedao = new FilmeDao();
 	public static Usuario usuario = new Usuario();
 	private String mensagem;
 	
@@ -43,15 +46,23 @@ public class HomeController {
 		}
 		
 //DEIXA A PRIMEIRA LETRA DO NOME EM MAIÚSCULO PARA EXIBIR NAS PÁGINAS
-		nome = usuario.getNomeComInicialMaiuscula(nome);
+		usuario = dao.buscarUsuario(nome);
+		nome = usuario.getNomeComInicialMaiuscula(nome);		
 		usuario.setNome(nome);
+		
+//O USUÁRIO É LEVADO À PÁGINA CONSULTA.HTML CASO SEJA UM CLIENTE
+		if (usuario.getTipoAcesso() == 'C') {			
+			model.addAttribute("usuario", usuario.getNome());
+			model.addAttribute("filmes",  filmedao.buscaTodosFilmes());
+			return "consulta";
+		}
 		
 		model.addAttribute("usuario", usuario.getNome());
 		model.addAttribute("generos", Genero.values());
 		return "cadastro";
 	}
 	
-	@RequestMapping(value = "/registrado", method = RequestMethod.POST)
+	@RequestMapping(value = "/consulta", method = RequestMethod.POST)
 	public String registrarUsuario(Model model, String nomeRegistro, String senhaRegistro, String emailRegistro) {
 		String nome = nomeRegistro.toLowerCase();
 		String senha = senhaRegistro.toLowerCase();
@@ -63,13 +74,13 @@ public class HomeController {
 					+ "ou o nome possui menos de 3 caracteres ou "
 					+ "a senha possui menos de 5 caracteres.";
 			model.addAttribute("mensagem", mensagem);
-			return "inicio"; 
+			return "inicio";
 		}
 		
 		if (!dao.autenticarRegistro(nome, email)) {
 			mensagem = "Ops! Você e/ou seu email parece(m) já estar registrado(s)! Tente logar mais uma vez.";
 			model.addAttribute("mensagem", mensagem);
-			return "inicio"; 
+			return "inicio";
 		}
 		
 //INSERÇÃO DE DADOS PARA O BANCO DE DADOS
@@ -84,7 +95,7 @@ public class HomeController {
 		usuario.setNome(nome);
 		
 		model.addAttribute("usuario", usuario.getNome());
-		model.addAttribute("generos", Genero.values());
+		model.addAttribute("filmes",  filmedao.buscaTodosFilmes());
 		return "consulta";
 	}
 }

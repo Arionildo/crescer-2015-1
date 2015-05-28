@@ -39,20 +39,4 @@ public class CadastroController {
 		model.addAttribute("filmes",  dao.buscaTodosFilmes());
 		return "consultaAdm";
 	}
-	
-
-	@RequestMapping(value = "/redirecionar", method = RequestMethod.GET)
-	public String redirecionarSeForCliente(Model model, String nome) {
-//O USUÁRIO É LEVADO À PÁGINA CONSULTA.HTML CASO SEJA UM CLIENTE
-		if (HomeController.usuario.getTipoAcesso() == 'C') {
-			nome = HomeController.usuario.getNomeComInicialMaiuscula(nome);
-			HomeController.usuario.setNome(nome);
-			
-			model.addAttribute("usuario", HomeController.usuario.getNome());
-			model.addAttribute("filmes",  dao.buscaTodosFilmes());
-			return "consulta";
-		} else {
-			return "";
-		}
-	}
 }

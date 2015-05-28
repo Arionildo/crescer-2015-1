@@ -44,6 +44,17 @@ public class UsuarioDao {
 //SE NÃO HOUVER USUÁRIO COM O MESMO NOME E EMAIL INFORMADOS, O USUÁRIO PODERÁ SER REGISTRADO
 		return usuario.isEmpty() ? true : false;
 	}
+	
+	public Usuario buscarUsuario(String nome) {
+		return jdbcTemplate.query("SELECT * FROM usuarios WHERE nome = ?", (ResultSet rs, int rowNum) -> {
+			Usuario usuario = new Usuario();
+			usuario.setNome(rs.getString("nome"));
+			usuario.setSenha(rs.getString("senha"));
+			usuario.setEmail(rs.getString("email"));
+			usuario.setTipoAcesso(rs.getString("tipoAcesso").charAt(0));
+			return usuario;
+		}, nome).get(0);
+	}
 
 	public List<Usuario> buscaTodosUsuarios(){
 		return jdbcTemplate.query("SELECT * FROM usuarios", (ResultSet rs, int rowNum) -> {
