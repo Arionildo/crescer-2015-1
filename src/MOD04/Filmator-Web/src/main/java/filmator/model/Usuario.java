@@ -1,5 +1,6 @@
 package filmator.model;
 
+
 public class Usuario {
 
 	private String nome;

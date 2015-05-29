@@ -19,6 +19,7 @@ public class CadastroController {
 	
 	@RequestMapping(value = "/consultaAdm", method = RequestMethod.POST)
 	public String adicionarFilme(Model model, String nome, String genero, String ano, String foto, String sinopse) {
+		
 		if (nome.trim() == ""
 				|| nome.trim().length() < 3
 				|| ano.trim() == ""
@@ -35,7 +36,6 @@ public class CadastroController {
 //IMPEDE QUE HAJA FILME COM NOME DUPLICADO
 		if (dao.isNotDuplicado(filme)) dao.inserirFilme(filme);
 		
-		model.addAttribute("usuario", HomeController.usuario.getNome());
 		model.addAttribute("filmes",  dao.buscaTodosFilmes());
 		return "consultaAdm";
 	}

@@ -1,6 +1,9 @@
 function avaliar(){
 	$.ajax({
-		url: "/avaliar",
-		type: "POST"
+		url: "/consulta",
+		type: "POST",
+		success: function(){
+        	alert("funfô!");
+    	}
 	});
 }

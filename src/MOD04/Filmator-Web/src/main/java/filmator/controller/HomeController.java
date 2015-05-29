@@ -19,7 +19,6 @@ public class HomeController {
 	private UsuarioDao dao = new UsuarioDao();
 	@Inject
 	private FilmeDao filmedao = new FilmeDao();
-	public static Usuario usuario = new Usuario();
 	private String mensagem;
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
@@ -29,6 +28,8 @@ public class HomeController {
 	
 	@RequestMapping(value = "/cadastro", method = RequestMethod.POST)
 	public String iniciarSessao(Model model, String nome, String senha) {
+		Usuario usuario = dao.buscarUsuario(nome);
+		
 //RETORNA A REQUISIÇÃO CASO O USUÁRIO NÃO INFORME UM NOME VÁLIDO
 		if (nome == null || nome.trim() == "" || nome.trim().length() < 3) {
 			mensagem = "Verifique se o nome que você digitou não está vazio "
@@ -45,19 +46,13 @@ public class HomeController {
 			return "inicio";
 		}
 		
-//DEIXA A PRIMEIRA LETRA DO NOME EM MAIÚSCULO PARA EXIBIR NAS PÁGINAS
-		usuario = dao.buscarUsuario(nome);
-		nome = usuario.getNomeComInicialMaiuscula(nome);		
-		usuario.setNome(nome);
-		
 //O USUÁRIO É LEVADO À PÁGINA CONSULTA.HTML CASO SEJA UM CLIENTE
-		if (usuario.getTipoAcesso() == 'C') {			
-			model.addAttribute("usuario", usuario.getNome());
+		if (usuario.getTipoAcesso() == 'C') {
+			model.addAttribute("usuario", usuario.getNomeComInicialMaiuscula(nome));
 			model.addAttribute("filmes",  filmedao.buscaTodosFilmes());
 			return "consulta";
 		}
 		
-		model.addAttribute("usuario", usuario.getNome());
 		model.addAttribute("generos", Genero.values());
 		return "cadastro";
 	}
@@ -67,6 +62,7 @@ public class HomeController {
 		String nome = nomeRegistro.toLowerCase();
 		String senha = senhaRegistro.toLowerCase();
 		String email = emailRegistro.toLowerCase();
+		Usuario usuario = new Usuario();
 		
 		if (nome == null || nome.trim() == "" || nome.trim().length() < 3 ||
 				senha == null || senha.trim() == "" || senha.trim().length() < 5) {
@@ -90,11 +86,7 @@ public class HomeController {
 		usuario.setTipoAcesso('C');		
 		dao.inserirUsuario(usuario);
 		
-//ATUALIZAÇÃO DO NOME PARA EXIBIR NAS TELAS
-		nome = usuario.getNomeComInicialMaiuscula(nome);
-		usuario.setNome(nome);
-		
-		model.addAttribute("usuario", usuario.getNome());
+		model.addAttribute("usuario", usuario.getNomeComInicialMaiuscula(nome));
 		model.addAttribute("filmes",  filmedao.buscaTodosFilmes());
 		return "consulta";
 	}
