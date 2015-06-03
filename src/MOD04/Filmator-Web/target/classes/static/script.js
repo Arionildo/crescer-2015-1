@@ -1,7 +1,7 @@
 function avaliar(){
 	$.ajax({
 		url: "/consulta",
-		type: "POST",
+		type: "GET",
 		success: function(){
         	alert("funfô!");
     	}
