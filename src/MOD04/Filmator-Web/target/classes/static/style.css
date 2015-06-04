@@ -1,4 +1,4 @@
-*:not(.star-rating .rating-container .rating-gly-star) {
+*:not(.rating-stars) {
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: #2e2e2e;
 }
@@ -95,7 +95,7 @@ ul {
 .consulta {
 	position: relative;
 	margin-top: 15px;
-	margin-left: 30px;
+	margin-left: 20px;
 	margin-bottom: 15px;
 	display: inline-block;
 	max-height: 400px;
@@ -135,4 +135,14 @@ ul {
 .star-rating {
 	float: right;
 	margin-top: -18px;
+}
+
+@media screen and (max-width: 870px) {
+	.consulta {
+		position: relative;
+		margin-top: 20px;
+		margin-left: auto;
+		display: block;
+		max-height: 400px;
+	}
 }

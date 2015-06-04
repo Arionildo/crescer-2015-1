@@ -5,10 +5,12 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import filmator.dao.FilmeDao;
+import filmator.model.Avaliacao;
 import filmator.model.Genero;
 import filmator.model.Usuario;
 
@@ -31,5 +33,12 @@ public class ConsultaController {
 		
 		model.addAttribute("generos", Genero.values());
 		return "cadastro";
+	}
+	
+	@RequestMapping(value = "/avaliar", method = RequestMethod.POST)
+	public String atualizarAvaliacao(@RequestBody Avaliacao avaliacao) {
+		
+		System.out.println("Entrou no método avaliar com o valor "+ avaliacao.nota +" no filme "+ avaliacao.filme);
+		return "avaliar";
 	}
 }

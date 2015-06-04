@@ -28,8 +28,6 @@ public class HomeController {
 	
 	@RequestMapping(value = "/cadastro", method = RequestMethod.POST)
 	public String iniciarSessao(Model model, String nome, String senha) {
-		Usuario usuario = dao.buscarUsuario(nome);
-		
 //RETORNA A REQUISIÇÃO CASO O USUÁRIO NÃO INFORME UM NOME VÁLIDO
 		if (nome == null || nome.trim() == "" || nome.trim().length() < 3) {
 			mensagem = "Verifique se o nome que você digitou não está vazio "
@@ -45,6 +43,8 @@ public class HomeController {
 			model.addAttribute("mensagem", mensagem);
 			return "inicio";
 		}
+		
+		Usuario usuario = dao.buscarUsuario(nome);
 		
 //O USUÁRIO É LEVADO À PÁGINA CONSULTA.HTML CASO SEJA UM CLIENTE
 		if (usuario.getTipoAcesso() == 'C') {
